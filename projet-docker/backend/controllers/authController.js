@@ -216,7 +216,7 @@ async (req, res) => {
   const sent= await transporter.sendMail(mailOptions);
   if (sent){
     return res.status(200).json({
-      message: "Un email de réinitialisation a été envoyé ✅",
+      message: "Un email de réinitialisation a été envoyé , veuillez verifier spam✅",
     });
   }
       
